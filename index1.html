@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--STEP 5 CONTINUED
+    <script>
+        function displayMessage() {
+            alert("I have been clicked.");
+        }
+
+    </script>
+-->
+    <meta charset="utf-8">
+    <title>Assignment, 5 Part 1</title>
+</head>
+
+<body>
+
+    <!--STEP 1
+    <script>
+
+        function displayMessage() {
+            alert("I have been clicked.");
+        }
+
+    </script>
+
+    <button onclick="displayMessage()">CLICK ME</button>
+-->
+
+    <!--STEP 2
+    <div>
+        <button id="myButton">CLICK ME</button>
+    </div>
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            alert("I have been clicked.");
+        });
+
+    </script>
+-->
+
+    <!--STEP 3
+    <div>
+        <button id="myButton">CLICK ME</button>
+    </div>
+    <script>
+        var buttonClick = document.getElementById("myButton");
+        buttonClick.onclick = function() {
+            alert("I have been clicked.");
+        }
+
+    </script>
+-->
+
+    <!--STEP 4
+    <div>
+        <button id="myButton">CLICK ME</button>
+    </div>
+    <script>
+        var buttonClick = document.getElementById("myButton");
+
+        buttonClick.addEventListener("click", function() {
+            alert("I have been clicked.");
+        }, false);
+
+    </script>
+-->
+
+    <!--STEP 5 (SEE HEAD FOR JAVASCRIPT CODE)
+
+    <button onclick="displayMessage()">CLICK ME</button>
+-->
+
+    <!--STEP 6
+    <a href="http://www.google.com" id="redirect">Visit Google</a>
+    <script>
+        var linkClick = document.getElementById("redirect");
+        linkClick.onclick = function(event) {
+            event.preventDefault();
+            alert("You clicked on the link, but will not be redirected to www.google.com.");
+        }
+
+    </script>
+-->
+
+    <!--STEP 7
+    <div>
+        <p>Enter up to 20 characters.</p>
+        <textarea id="myTextBox" cols="20" rows="1"></textarea>
+    </div>
+    <div>
+        <button id="myButton">CLICK ME</button>
+    </div>
+
+    <script>
+        var clickButton = document.getElementById("myButton");
+        clickButton.onclick = function() {
+            myButton.disabled = true;
+            alert(myTextBox.value);
+        }
+
+    </script>
+-->
+
+    <!--STEP 8 SEE NEWPAGE AS WELL
+
+    <div>
+        <button id="myButton">CLICK ME</button>
+    </div>
+
+    <script>
+        var clickButton = document.getElementById("myButton");
+        clickButton.onclick = function() {
+            window.open('newpage.html', 'gg', 'width=300,height=300,resizable=yes');
+
+        }
+
+    </script>
+-->
+
+    <!--STEP 9 ********NOT DONE************
+
+    <button id="myStartButton">START</button>
+
+    <button id="myStopButton">STOP</button>
+
+    <script>
+        var clickStart = document.getElementById("myStartButton");
+
+        clickStart.onclick = function() {
+            alert("Learning Javascript is fun!");
+        }
+        setInterval(function, 2000);
+
+    </script>
+-->
+
+    <!--STEP 10
+
+    <select id="dropDownMenu">
+        <option value="item1">item 1</option>
+        <option value="item2">item 2</option>
+        <option value="item3">item 3</option>
+        <option value="item4">item 4</option>
+    </select>
+
+    <style>
+        #dropDownMenu {
+            width: 100px;
+        }
+
+    </style>
+
+
+    <button id="myButton">SELECT</button>
+
+    <script>
+        var buttonClick = document.getElementById("myButton");
+        var getDropDown = document.getElementById("dropDownMenu");
+
+        myButton.addEventListener("click", getItem);
+
+        function getItem() {
+            alert(getDropDown.value);
+        }
+
+    </script>
+-->
+</body>
+
+</html>
